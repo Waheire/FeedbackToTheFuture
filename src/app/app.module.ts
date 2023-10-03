@@ -13,6 +13,8 @@ import { SustainabilityComponent } from './Components/Pages/sustainability/susta
 import { ContactComponent } from './Components/Pages/contact/contact.component';
 import { SubscribeComponent } from './Components/Shared/subscribe/subscribe.component';
 import { IntroductionComponent } from './Components/Shared/introduction/introduction.component';
+import { HomeComponent } from './Components/Pages/home/home.component';
+import { NotFoundComponent } from './Components/Pages/not-found/not-found.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { IntroductionComponent } from './Components/Shared/introduction/introduc
     SustainabilityComponent,
     ContactComponent,
     SubscribeComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    HomeComponent,
+    NotFoundComponent
 
   ],
   imports: [
