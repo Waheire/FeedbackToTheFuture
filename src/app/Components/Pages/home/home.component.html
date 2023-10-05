@@ -1,12 +1,55 @@
-<div id="page-container" class="flex flex-col mx-auto min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
-    <!-- Add the home page components -->
-    <app-header></app-header>
-    <app-hero></app-hero>
-    <app-introduction></app-introduction>
-    <!-- section 3 -->
-    <div class="container">
-
+<!-- Add the home page components -->
+<app-hero></app-hero>
+<app-introduction></app-introduction>
+<!-- section 3 -->
+<div class="h-[85vh] bg-secondary flex flex-col justify-end pb-28 bg-no-repeat bg-cover bg-center "
+    style="background-image: url(../../../../assets/images/Hero/Hero-2.png); ">
+    <!-- main conatiner -->
+    <div class="container mx-auto text-center items-center ">
+        <div class="">
+            <div class="">
+                <h4 class="text-white uppercase text-lg font-semibold mb-4">Welcome to feedback to the future</h4>
+            </div>
+            <div class="">
+                <h1 class="text-white uppercase text-4xl font-bold mb-4">Co-creation and operation of <br>circular and
+                    regenerative
+                    innovations.</h1>
+            </div>
+            <div class="flex justify-center flex-wrap ">
+                <div class="">
+                    <p class="text-white ">50 Farmers in our Program
+                    </p>
+                </div>
+                <div class="">
+                    <!-- hr line comes here -->
+                    <p>--------------------------</p>
+                </div>
+                <div class="">
+                    <p class="text-white ">More than 200 Crops
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <app-subscribe></app-subscribe>
-    <app-footer></app-footer>
 </div>
+
+<!-- section 4 - Donors -->
+<div class="bg-gray-100 md:h-[50vh] flex justify-center">
+    <div class="container flex flex-col mx-auto p-11 justify-center">
+        <div class="">
+            <hr>
+            <h4 class="text-secondary uppercase text-lg font-bold pb-4">Our Donors and Partners</h4>
+        </div>
+        <div class="flex justify-between flex-wrap ">
+            <img src="../../../../assets/images/donors/donor-1.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-2.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-3.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-4.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-5.png" alt="" class="h-32">
+            <!-- <img src="../../../../assets/images/donors/donor-6.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-7.png" alt="" class="h-32"> -->
+        </div>
+    </div>
+</div>
+<app-subscribe></app-subscribe>
+<app-footer></app-footer>

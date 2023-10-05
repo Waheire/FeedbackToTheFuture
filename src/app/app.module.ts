@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,9 @@ import { SubscribeComponent } from './Components/Shared/subscribe/subscribe.comp
 import { IntroductionComponent } from './Components/Shared/introduction/introduction.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
 import { NotFoundComponent } from './Components/Pages/not-found/not-found.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CarouselComponent } from './Components/Shared/carousel/carousel.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -31,12 +35,18 @@ import { NotFoundComponent } from './Components/Pages/not-found/not-found.compon
     SubscribeComponent,
     IntroductionComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CarouselComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    CarouselModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

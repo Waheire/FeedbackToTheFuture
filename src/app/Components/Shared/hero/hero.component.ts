@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+// Initialization for ES Users
+import {
+  Carousel,
+  initTE,
+} from "tw-elements";
+initTE({ Carousel });
 
 @Component({
   selector: 'app-hero',
@@ -6,5 +12,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
+
+
 
 }
