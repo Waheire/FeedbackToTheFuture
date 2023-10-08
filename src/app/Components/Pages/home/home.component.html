@@ -34,22 +34,122 @@
 </div>
 
 <!-- section 4 - Donors -->
-<div class="bg-gray-100 md:h-[50vh] flex justify-center">
-    <div class="container flex flex-col mx-auto p-11 justify-center">
+<app-donors></app-donors>
+
+
+<!-- blog news section -->
+<div class="container my-24 mx-auto px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32">
         <div class="">
             <hr>
-            <h4 class="text-secondary uppercase text-lg font-bold pb-4">Our Donors and Partners</h4>
+            <h4 class="text-secondary uppercase font-bold text-lg pb-4">News Feed</h4>
+            <h1 class="mb-12 pb-4 text-5xl font-bold text-primary">Latest News & Articles <br>Directly from Blog</h1>
         </div>
-        <div class="flex justify-between flex-wrap ">
-            <img src="../../../../assets/images/donors/donor-1.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-2.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-3.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-4.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-5.png" alt="" class="h-32">
-            <!-- <img src="../../../../assets/images/donors/donor-6.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-7.png" alt="" class="h-32"> -->
+
+        <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
+            <div class="mb-6 lg:mb-0">
+                <div
+                    class=" block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <div class="flex">
+                        <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg" class="w-full" />
+
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 text-lg font-bold text-gray-600"><strong>Hilda Malowa</strong></h5>
+                        <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
+                            Regenerative Agriculture Practices
+                        </h2>
+                        <p class="mb-4">
+                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                            placerat vulputate. Ut vulputate est non quam dignissim
+                            elementum. Donec a ullamcorper diam.
+                        </p>
+                        <button type=""
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-sm font-medium"> Read More </span>
+
+                            <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-6 lg:mb-0">
+                <div
+                    class=" block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <div class="flex">
+                        <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/18.jpg" class="w-full" />
+
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 text-lg font-bold text-gray-600"><strong>Hilda Malowa</strong></h5>
+                        <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
+                            Regenerative Agriculture Practices
+                        </h2>
+                        <p class="mb-4">
+                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                            placerat vulputate. Ut vulputate est non quam dignissim
+                            elementum. Donec a ullamcorper diam.
+                        </p>
+                        <button type=""
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-sm font-medium"> Read More </span>
+
+                            <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-6 lg:mb-0">
+                <div
+                    class=" block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <div class="flex">
+                        <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg" class="w-full" />
+
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 text-lg font-bold text-gray-600"><strong>Hilda Malowa</strong></h5>
+                        <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
+                            Regenerative Agriculture Practices
+                        </h2>
+                        <p class="mb-4">
+                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                            placerat vulputate. Ut vulputate est non quam dignissim
+                            elementum. Donec a ullamcorper diam.
+                        </p>
+                        <button type=""
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-sm font-medium"> Read More </span>
+
+                            <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </div>
+
 <app-subscribe></app-subscribe>
 <app-footer></app-footer>

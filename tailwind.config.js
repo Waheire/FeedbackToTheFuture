@@ -17,4 +17,5 @@ module.exports = {
     },
   },
   plugins: [require("flowbite", "tw-elements/dist/plugin.cjs")],
+  darkMode: "class",
 };

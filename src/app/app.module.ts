@@ -19,6 +19,9 @@ import { NotFoundComponent } from './Components/Pages/not-found/not-found.compon
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarouselComponent } from './Components/Shared/carousel/carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { DonorsComponent } from './Components/Shared/donors/donors.component';
+import { TeamsComponent } from './Components/Shared/teams/teams.component';
+import { InternshipComponent } from './Components/Shared/internship/internship.component';
 
 
 @NgModule({
@@ -37,6 +40,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HomeComponent,
     NotFoundComponent,
     CarouselComponent,
+    DonorsComponent,
+    TeamsComponent,
+    InternshipComponent,
 
 
   ],
