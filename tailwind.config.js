@@ -16,6 +16,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite", "tw-elements/dist/plugin.cjs")],
+  plugins: [
+    require("flowbite", "tw-elements/dist/plugin.cjs", "@tailwindcss/forms"),
+  ],
   darkMode: "class",
 };
