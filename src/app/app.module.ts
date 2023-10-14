@@ -22,6 +22,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { DonorsComponent } from './Components/Shared/donors/donors.component';
 import { TeamsComponent } from './Components/Shared/teams/teams.component';
 import { InternshipComponent } from './Components/Shared/internship/internship.component';
+import { LogoCarouselComponent } from './Components/Shared/logo-carousel/logo-carousel.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { InternshipComponent } from './Components/Shared/internship/internship.c
     DonorsComponent,
     TeamsComponent,
     InternshipComponent,
+    LogoCarouselComponent,
 
 
   ],

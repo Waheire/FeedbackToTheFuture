@@ -1,42 +1,44 @@
 .slider-container {
-  height: 90vh;
+  position: relative;
+  margin: auto;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px #dce1e1;
+  text-align: center;
 }
 .slider-container img {
   display: none;
 }
 .slider-container img.image-active {
-  display: flex;
-  flex-direction: row;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 /* text */
-.slider-container, 
+.slider-container,
 .sliderText {
-    display: none;
+  display: none;
 }
 
-.slider-container, 
+.slider-container,
 .sliderText-active {
-    display: block;
+  display: block;
 }
 
 .sliderText {
-    position: absolute;
-    bottom: 18%;
-    left: 0;
-    right: 0;
-    /* margin-bottom: 2rem; */
+  position: absolute;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 2rem;
 }
-
 
 /* dots/ indicators */
 .carousel-dot-container {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 10%;
+  bottom: 0;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -45,8 +47,8 @@
 
 .dot {
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 13px;
+  width: 13px;
   margin: 0 5px;
   background-color: #ffff;
   border-radius: 50%;
@@ -114,5 +116,5 @@
 
 .icon-prev,
 .icon-next {
-  font-size: 45px;
+  font-size: 35px;
 }
