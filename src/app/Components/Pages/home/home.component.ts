@@ -10,23 +10,18 @@ export class HomeComponent {
   images = [
     {
       imageSrc:
-        '../../../../assets/images/home/header-1.jpg',
+        '../../../../assets/images/Hero/slider-1.png',
       imageAlt: 'BioVision Africa Trus',
     },
     {
       imageSrc:
-        '../../../../assets/images/home/header-2.jpg',
+        '../../../../assets/images/Hero/slider-2.png',
       imageAlt: 'Stiching Doen',
     },
     {
       imageSrc:
-        '../../../../assets/images/home/home-2.jpg',
+        '../../../../assets/images/Hero/slider-3.png',
       imageAlt: 'Alliance Ciat',
-    },
-    {
-      imageSrc:
-        '../../../../assets/images/Hero/Hero-2.png',
-      imageAlt: 'Diabetes Awareness trust',
     },
   ]
 
@@ -70,28 +65,29 @@ export class HomeComponent {
 
   texts = [
     {
-      h4Heading: "Welcome To Feedback To the Future",
-      h1Heading: "CO-CREATION AND OPERATION OF CIRCULAR AND REGENERATIVE INNOVATIONS.",
-      pContentLeft: "50 Farmers in our Program",
-      pContentRight: "More than 200 Crops"
+      h4Heading: "Feedback To the Future",
+      h1Heading: "Co-creation and Operation of Circular and Regenerative Innovations.",
+      pContentLeft: "50 farmers in our program",
+      pContentRight: "More than 200 crops"
     },
-    {
-      h4Heading: "Welcome To Feedback To the Future",
-      h1Heading: "CO-CREATION AND OPERATION OF CIRCULAR AND REGENERATIVE INNOVATIONS.",
-      pContentLeft: "50 Farmers in our Program",
-      pContentRight: "More than 200 Crops"
-    },
-    {
-      h4Heading: "Welcome To Feedback To the Future",
-      h1Heading: "CO-CREATION AND OPERATION OF CIRCULAR AND REGENERATIVE INNOVATIONS.",
-      pContentLeft: "50 Farmers in our Program",
-      pContentRight: "More than 200 Crops"
-    },
-    {
-      h4Heading: "Welcome To Feedback To the Future",
-      h1Heading: "CO-CREATION AND OPERATION OF CIRCULAR AND REGENERATIVE INNOVATIONS.",
-      pContentLeft: "50 Farmers in our Program",
-      pContentRight: "More than 200 Crops"
-    },
+    // {
+    //   h4Heading: "Welcome To Feedback To the Future",
+    //   h1Heading: "Co-creation and Operation of Circular and Regenerative Innovations",
+    //   pContentLeft: "50 farmers in our program",
+    //   pContentRight: "More than 200 crops"
+    // },
+    // {
+    //   h4Heading: "Welcome To Feedback To the Future",
+    //   h1Heading: "Co-creation and Operation of Circular and Regenerative Innovations",
+    //   pContentLeft: "50 farmers in our program",
+    //   pContentRight: "More than 200 crops"
+    // },
+    // {
+    //   h4Heading: "Welcome To Feedback To the Future",
+    //   h1Heading: "Co-creation and Operation of Circular and Regenerative Innovations",
+    //   pContentLeft: "50 farmers in our program",
+    //   pContentRight: "More than 200 crops"
+    // },
+
   ]
 }

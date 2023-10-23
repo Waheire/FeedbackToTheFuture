@@ -4,6 +4,7 @@
 
 .menu_icon span {
   width: 40px;
-  
 }
-
+.active {
+  font-weight: bold;
+}
