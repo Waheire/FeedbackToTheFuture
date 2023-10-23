@@ -1,16 +1,35 @@
-<div class="bg-secondary flex justify-center">
+<!-- <div class="bg-secondary md:flex md:flex-row justify-center text-center">
     <div class="container flex flex-col mx-auto my-20 p-11 justify-center">
         <div class="">
-            <h1 class="mb-12 pb-4 text-5xl font-bold text-white">Our Donors and Partners</h1>
+            <h1 class="text-2xl mb-12 pb-4 md:text-5xl md:text-left font-bold text-white">Our Donors and Partners</h1>
         </div>
-        <div class="flex justify-between flex-wrap items-center text-center mb-4">
+        <div class="md:flex md:justify-between md:flex-wrap items-center text-center md:mb-4">
             <img src="../../../../assets/images/donors/donor-1.png" alt="" class="h-32">
             <img src="../../../../assets/images/donors/donor-2.png" alt="" class="h-32">
             <img src="../../../../assets/images/donors/donor-3.png" alt="" class="h-32">
-            <!-- <img src="../../../../assets/images/donors/donor-4.png" alt="" class="h-32">
+            <img src="../../../../assets/images/donors/donor-4.png" alt="" class="h-32">
             <img src="../../../../assets/images/donors/donor-5.png" alt="" class="h-32">
             <img src="../../../../assets/images/donors/donor-6.png" alt="" class="h-32">
-            <img src="../../../../assets/images/donors/donor-7.png" alt="" class="h-32"> -->
+            <img src="../../../../assets/images/donors/donor-7.png" alt="" class="h-32">
+        </div>
+    </div>
+</div> -->
+<div class="bg-secondary w-full p-20">
+    <div class="container mx-auto">
+        <!-- HEADING -->
+        <div class="pb-10">
+            <h1 class="font-bold text-4xl text-white uppercase">Our Donors and Partners</h1>
+        </div>
+        <!-- LOGO SLIDER -->
+        <div class="flex flex-col" *ngIf="images && images.length > 0">
+            <!-- SLIDER ITEM -->
+            <div class=" flex flex-row gap-4 " *ngIf="indicators">
+                <div class="" *ngFor="let image of images; let i = index">
+                    <img [src]="image.imageSrc" [alt]="image.imageAlt">
+                </div>
+            </div>
+            <div>
+            </div>
         </div>
     </div>
 </div>

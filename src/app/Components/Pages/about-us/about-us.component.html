@@ -1,53 +1,53 @@
 <!-- section 1 Hero -->
 <section class="h-[80vh] flex flex-col justify-end bg-no-repeat bg-cover bg-transparent bg-center"
     style="background-image: url(../../../../assets/images/Hero/hero-aboutUs.png);">
-    <div class="w-full bg-secondary p-2">
+    <div class="w-full ">
         <div class="container mx-auto md:p-3">
-            <h1 class="text-white text-center text-2xl md:text-4xl font-bold md:px-8 px-1 ">We srive to create a
+            <h1 class="text-white text-center text-2xl font-bold pb-6 md:text-4xl md:px-8 md:py-2 ">We strive to create
+                a
                 dynamic
                 equilibrium
                 between the
-                social foundation and ecological ceiling as we aim to plift local communities.</h1>
+                social foundation and ecological ceiling as we aim to uplift local communities.</h1>
         </div>
     </div>
 </section>
 
 <!-- section 2 our organization -->
 <div class="">
-    <div class=" xl:w-2/4 mx-auto flex flex-col text-center items-center p-4 md:py-20 md:mb-56 mb-32">
+    <div class=" container mx-auto flex flex-col text-center items-center p-4 md:py-20 md:mb-56 mb-28">
         <!-- heading -->
         <div class="">
             <h4 class="text-primary text-2xl uppercase font-bold py-4 md:text-4xl">Our Organization</h4>
         </div>
         <!-- content -->
-        <div class="text-gray-800 text-lg  text-center mt-4">
-            <p class="pb-4 ">We are dedicated to promoting resilient and equitable communities in Kenya and
-                East Africa by adopting regenerative and circular economy practices.</p>
-            <p class="pb-4">Our primary objective is to enhance the health and well-being of both people and the
-                planet by increasing access to diverse nutritious organic foods, sustainable energy,
-                waste management systems, natural building materials, and ecosystem restoration.</p>
-            <p class="p-4">We firmly believe that effective collaboration and partnership building with
-                stakeholders from all sectors is crucial to achieving sustainable development that
-                balances social equity and ecological preservation. We are committed to creating a
-                regenerative economy prioritizing sustainable community development, biodiversity
-                conservation, and environmental stewardship.</p>
+        <div class="text-gray-800 text-lg md:text-2xl text-center mt-4">
+            <p class="pb-4 ">We are dedicated to promoting resilient and equitable communities in Kenya and East
+                Africa by adopting regenerative and circular economy practices. Our primary objective is to
+                enhance the health and well-being of both people and the planet by increasing access to
+                diverse nutritious organic foods, sustainable energy, waste management systems, natural
+                building materials, and ecosystem restoration. We firmly believe that effective collaboration
+                and partnership building with stakeholders from all sectors is crucial to achieving
+                sustainable development that balances social equity and ecological preservation. We are
+                committed to creating a regenerative economy prioritizing sustainable community
+                development, biodiversity conservation, and environmental stewardship</p>
         </div>
     </div>
 </div>
 
 <!-- section 2 our organization -->
 <div class=" bg-secondary w-full mx-auto flex flex-col text-center items-center py-20 ">
-    <div class="-m-40 md:-m-60  xl:w-2/4  w-[90%]">
+    <div class="-m-40 md:-m-60 container  w-[90%]">
         <img src="../../../../assets/images/Hero/org-pic.png" alt="" class="">
     </div>
-    <div class="mt-48 xl:w-2/4 md:mt-80">
+    <div class="mt-48 container md:mt-80">
         <!-- heading -->
         <div class="">
             <hr>
             <h4 class="text-white text-2xl md:text-4xl uppercase font-bold py-4">Living Lab Approach</h4>
         </div>
         <!-- content -->
-        <div class="text-white md:px-10 text-lg">
+        <div class="text-white text-lg md:px-10 md:text-2xl">
             <p class="p-5">At our organization, we value community engagement and believe that involving local
                 communities in identifying issues, brainstorming solutions, and executing
                 improvements is key. We use a living lab approach that creates an environment
@@ -62,34 +62,29 @@
     </div>
 </div>
 
-<div class="container mx-auto my-24 text-center px-4 md:flex md:flex-row gap-2 md:p-28 md:text-left items-center">
-    <div class="">
+<div class="container mx-auto my-24 text-center px-4">
+    <div class="md:mx-48">
         <div>
-            <h4 class="text-secondary font-bold uppercase">Our Mission</h4>
+            <h4 class="text-secondary font-bold uppercase text-2xl md:text-4xl pb-4">Our Vision</h4>
         </div>
         <div>
-            <h1 class="text-primary font-bold text-3xl pb-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h1>
+            <p class="text-gray-600 mr-5 text-lg md:text-2xl pb-4">Our vision is a regenerative and
+                circular economy in an equitable world, ensuring equal access to resources and living
+                in harmony with nature through collaboration and informed choices.</p>
+        </div>
+        <div class="py-6">
+            <h4 class="text-secondary font-bold uppercase text-2xl md:text-4xl ">Our Mission</h4>
         </div>
         <div>
-            <p class="text-gray-600 font-semibold mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                ipsa
-                repudiandae, quibusdam doloremque qui
-                similique voluptas aperiam eos totam? Beatae eveniet eius ullam odio asperiores eos enim ab quae
-                perferendis!</p>
+            <p class="text-gray-600 mr-5 text-lg md:text-2xl pb-4">Our mission is to inspire and empower
+                individuals and communities to create a regenerative and circular economy,
+                promoting equal access to resources, fostering collaboration, and preserving biodiversity through
+                informed choices and
+                actions, ultimately leading to a sustainable and equitable world.</p>
         </div>
     </div>
-    <div class="">
-        <h4 class="text-secondary font-bold uppercase">Our Vision</h4>
-        <h1 class="text-primary font-bold text-3xl pb-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-        <p class="text-gray-600 font-semibold mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa
-            repudiandae, quibusdam doloremque qui
-            similique voluptas aperiam eos totam? Beatae eveniet eius ullam odio asperiores eos enim ab quae
-            perferendis!</p>
-    </div>
-
 </div>
-<app-donors></app-donors>
+<app-donors [images]="logoImages"></app-donors>
 <app-teams></app-teams>
 <app-internship></app-internship>
 <app-subscribe></app-subscribe>

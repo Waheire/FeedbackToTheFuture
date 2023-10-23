@@ -58,7 +58,7 @@
             <div class="ml-2">
                 <a class="text-xl text-neutral-800 dark:text-neutral-200" routerLink=""><img
                         src="../../../../assets/images/logo/logo-color.svg" alt="Feedback To The Future Logo"
-                        class="h-16" loading="lazy" />
+                        class="h-12 md:h-16" loading="lazy" />
                 </a>
             </div>
             <!-- Hamburger button for mobile view -->
@@ -67,8 +67,8 @@
                 type="button" data-te-collapse-init data-te-target="#navbarSupportedContent14"
                 aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- Hamburger icon -->
-                <span class="[&>svg]:w-7 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00833E" class="h-7 w-7 ">
+                <span class="[&>svg]:w-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#68B336" class="h-7 w-7 ">
                         <path fill-rule="evenodd"
                             d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                             clip-rule="evenodd" />
@@ -83,7 +83,7 @@
                 <ul class="flex flex-col xl:gap-10 pl-0 lg:mt-1 lg:flex-row uppercase font-bold" data-te-navbar-nav-ref>
                     <!-- Home link -->
                     <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                        <a class="active disabled:text-primary lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a class="active disabled:text-primary lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400 "
                             aria-current="Home page" routerLink="" routerLinkActive="active"
                             [routerLinkActiveOptions]={exact:true}>Home</a>
                     </li>
@@ -97,10 +97,7 @@
                         <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="what-we-do" routerLinkActive="active" data-te-nav-link-ref>What We Do</a>
                     </li>
-                    <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
-                            routerLink="services" routerLinkActive="active" data-te-nav-link-ref>Our Services</a>
-                    </li>
+
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
                         <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="sustainability" routerLinkActive="active" data-te-nav-link-ref>Media</a>
@@ -112,11 +109,14 @@
                 </ul>
                 <div class=" md:ml-10 lg:pr-2">
                     <!--Search button-->
-                    <button type="button"
-                        class="text-white bg-primary hover:bg-secondary  font-medium rounded-full text-sm px-8 py-4 text-center dark:bg-green-600 dark:hover:bg-primary">
-                        Donate
 
-                    </button>
+                    <a href="contact">
+
+                        <button type="button"
+                            class="text-white bg-primary hover:bg-secondary  font-medium rounded-full text-sm px-8 py-4 text-center dark:bg-green-600 dark:hover:bg-primary">
+                            Donate
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

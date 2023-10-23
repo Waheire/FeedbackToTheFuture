@@ -4,7 +4,7 @@
 <app-introduction></app-introduction>
 <!-- section 3 -->
 <div class="h-[100vh] bg-secondary flex flex-col justify-end flex-wrap pb-20 xl:pb-36 bg-no-repeat bg-cover bg-center "
-    style="background-image: url(../../../../assets/images/home/home-2.png); ">
+    style="background-image: url(../../../../assets/images/home/home-2.jpg); ">
     <!-- main conatiner -->
     <div class="container mx-auto text-center items-center ">
         <div class="flex flex-col">
@@ -32,7 +32,8 @@
 </div>
 
 <!-- section 4 - Donors -->
-<app-donors></app-donors>
+<app-donors [images]="logoImages"></app-donors>
+
 
 
 
@@ -41,9 +42,9 @@
     <!-- Section: Design Block -->
     <section class="mb-32">
         <div class="">
-            <hr>
-            <h4 class="text-secondary uppercase font-bold text-lg pb-4">News Feed</h4>
-            <h1 class="mb-12 pb-4 text-5xl font-bold text-primary">Latest News & Articles <br>Directly from Blog</h1>
+            <!-- <h4 class="text-secondary uppercase font-bold text-lg md:text-2xl pb-4">News Feed</h4> -->
+            <h1 class="mb-12 pb-4 text-2xl md:text-4xl font-bold text-primary">Latest News & Articles <br>Directly from
+                Blog</h1>
         </div>
 
         <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
@@ -53,7 +54,7 @@
                     <div class="flex">
                         <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                             data-te-ripple-init data-te-ripple-color="light">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg" class="w-full" />
+                            <img src="../../../../assets/images/home/blog-1.jpg" class="w-full" />
 
                         </div>
                     </div>
@@ -62,15 +63,12 @@
                         <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
                             Regenerative Agriculture Practices
                         </h2>
-                        <p class="mb-4">
-                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                            placerat vulputate. Ut vulputate est non quam dignissim
-                            elementum. Donec a ullamcorper diam.
+                        <p class="mb-4 text-2xl">
+
                         </p>
                         <button type=""
-                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
-                            <span class="text-sm font-medium"> Read More </span>
-
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-green-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-lg font-medium"> Read More </span>
                             <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -86,24 +84,20 @@
                     <div class="flex">
                         <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                             data-te-ripple-init data-te-ripple-color="light">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/18.jpg" class="w-full" />
+                            <img src="../../../../assets/images/home/blog-2.jpg" class="w-full" />
 
                         </div>
                     </div>
                     <div class="p-6">
                         <h5 class="mb-2 text-lg font-bold text-gray-600"><strong>Hilda Malowa</strong></h5>
                         <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
-                            Regenerative Agriculture Practices
+                            Organic farming
                         </h2>
-                        <p class="mb-4">
-                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                            placerat vulputate. Ut vulputate est non quam dignissim
-                            elementum. Donec a ullamcorper diam.
+                        <p class="mb-4 text-lg">
                         </p>
                         <button type=""
-                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
-                            <span class="text-sm font-medium"> Read More </span>
-
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-green-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-lg font-medium"> Read More </span>
                             <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -113,30 +107,27 @@
                     </div>
                 </div>
             </div>
+
             <div class="mb-6 lg:mb-0">
                 <div
                     class=" block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                     <div class="flex">
                         <div class=" mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                             data-te-ripple-init data-te-ripple-color="light">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg" class="w-full" />
+                            <img src="../../../../assets/images/home/blog-3.jpg" class="w-full" />
 
                         </div>
                     </div>
                     <div class="p-6">
                         <h5 class="mb-2 text-lg font-bold text-gray-600"><strong>Hilda Malowa</strong></h5>
                         <h2 class="mb-4 font-bold text-2xl text-primary dark:text-primary">
-                            Regenerative Agriculture Practices
+                            Mixed Farming
                         </h2>
-                        <p class="mb-4">
-                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                            placerat vulputate. Ut vulputate est non quam dignissim
-                            elementum. Donec a ullamcorper diam.
+                        <p class="mb-4 text-lg">
                         </p>
                         <button type=""
-                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto ">
-                            <span class="text-sm font-medium"> Read More </span>
-
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-green-400 sm:mt-0 sm:w-auto ">
+                            <span class="text-lg font-medium"> Read More </span>
                             <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
