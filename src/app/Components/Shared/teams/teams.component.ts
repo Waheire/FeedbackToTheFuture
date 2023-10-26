@@ -1,4 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+interface teamMemberDetails {
+  imageSrc: string;
+  imageAlt: string;
+  fullName: string;
+  title: string;
+  socialX: string;
+  socialLinkedin: string;
+}
+
+
 
 @Component({
   selector: 'app-teams',
@@ -6,5 +17,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./teams.component.css']
 })
 export class TeamsComponent {
+
+  @Input() details: teamMemberDetails[] = [];
 
 }

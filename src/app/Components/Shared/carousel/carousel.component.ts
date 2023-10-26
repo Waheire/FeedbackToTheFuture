@@ -8,7 +8,8 @@ interface carouselImage {
 
 interface imageText {
   h4Heading: string;
-  h1Heading: string;
+  h1Heading1: string;
+  h1Heading2: string;
   pContentLeft: string;
   pContentRight: string;
 }
@@ -27,7 +28,10 @@ export class CarouselComponent {
   @Input() texts: imageText[] = [];
 
   selectedIndex = 0;
-  ngOnInit(): void {
+  ngOnInit() {
+
+  
+
 
   }
 
@@ -35,6 +39,7 @@ export class CarouselComponent {
   selectedImage(index: number) {
     this.selectedIndex = index;
   }
+
 
   onPrevClick() {
     if (this.selectedIndex === 0) {
@@ -44,6 +49,7 @@ export class CarouselComponent {
     }
   }
 
+
   onNextClick() {
     if (this.selectedIndex === this.images.length - 1) {
       this.selectedIndex = 0;
@@ -51,5 +57,6 @@ export class CarouselComponent {
       this.selectedIndex++;
     }
   }
+
 
 }

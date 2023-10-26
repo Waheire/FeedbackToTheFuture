@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         primary: "#00833E",
         secondary: "#68B336",
-        secondary11: "#e6f2dd",
+        secondaryBg: "#e6f2dd",
       },
       fontFamily: {
         bodyfont: ["Bebas Neue", "sans-serif"],

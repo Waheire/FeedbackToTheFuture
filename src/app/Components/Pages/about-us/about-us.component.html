@@ -1,9 +1,9 @@
 <!-- section 1 Hero -->
 <section class="h-[80vh] flex flex-col justify-end bg-no-repeat bg-cover bg-transparent bg-center"
-    style="background-image: url(../../../../assets/images/Hero/hero-aboutUs.png);">
+    style="background-image: url(../../../../assets/images/about-us/hero-aboutUs.webp);">
     <div class="w-full bg-secondary">
-        <div class="container mx-auto md:p-3 ">
-            <h1 class="text-white text-center text-2xl font-bold pb-6 md:text-4xl md:px-8 md:py-10 ">We strive to create
+        <div class="max-w-5xl mx-auto px-6">
+            <h1 class="text-white text-center text-2xl font-bold py-6 ">We strive to create
                 a
                 dynamic
                 equilibrium
@@ -14,15 +14,15 @@
 </section>
 
 <!-- section 2 our organization -->
-<div class="">
-    <div class=" container mx-auto flex flex-col text-center items-center p-4 md:py-20 md:mb-56 mb-28">
+<div class="px-6 ">
+    <div class="  max-w-5xl mx-auto flex flex-col text-center items-center md:py-20 md:mb-56 mb-28">
         <!-- heading -->
         <div class="">
             <h4 class="text-primary text-2xl uppercase font-bold py-4 md:text-4xl">Our Organization</h4>
         </div>
         <!-- content -->
-        <div class="text-gray-800 text-lg md:text-2xl text-center mt-4">
-            <p class="pb-4 ">We are dedicated to promoting resilient and equitable communities in Kenya and East
+        <div class="text-gray-800 md:text-lg text-justify mt-4">
+            <p class="">We are dedicated to promoting resilient and equitable communities in Kenya and East
                 Africa by adopting regenerative and circular economy practices. Our primary objective is to
                 enhance the health and well-being of both people and the planet by increasing access to
                 diverse nutritious organic foods, sustainable energy, waste management systems, natural
@@ -36,25 +36,25 @@
 </div>
 
 <!-- section 2 our organization -->
-<div class=" bg-secondary w-full mx-auto flex flex-col text-center items-center py-20 ">
-    <div class="-m-40 md:-m-60 container  w-[90%]">
+<div class=" bg-secondary w-full mx-auto flex flex-col text-center items-center md:py-20 px-6 ">
+    <div class="-m-20  md:-m-72 max-w-5xl w-[100%]">
         <img src="../../../../assets/images/Hero/org-pic.png" alt="" class="">
     </div>
-    <div class="mt-48 container md:mt-80">
+    <div class="mt-36 max-w-5xl md:mt-80">
         <!-- heading -->
         <div class="">
             <hr>
-            <h4 class="text-white text-2xl md:text-4xl uppercase font-bold py-4">Living Lab Approach</h4>
+            <h4 class="text-white text-2xl uppercase font-bold py-4">Living Lab Approach</h4>
         </div>
         <!-- content -->
-        <div class="text-white text-lg md:px-10 md:text-2xl">
-            <p class="p-5">At our organization, we value community engagement and believe that involving local
+        <div class="text-white md:text-lg text-justify">
+            <p class="pb-4">At our organization, we value community engagement and believe that involving local
                 communities in identifying issues, brainstorming solutions, and executing
                 improvements is key. We use a living lab approach that creates an environment
                 where experts and community members can work together to undertake community based projects that are
                 tailored to their
                 specific needs.</p>
-            <p class="p-2">Our living labs are spaces for creativity and experimentation of regenerative and
+            <p class="pb-6">Our living labs are spaces for creativity and experimentation of regenerative and
                 circular innovations in real life, allowing us to test, prototype, pilot, and scale proven
                 and working technologies or innovations. This way we ensure the full participation of
                 different stakeholders and our programs are contextualized to the local situation.</p>
@@ -62,21 +62,21 @@
     </div>
 </div>
 
-<div class="container mx-auto my-24 text-center px-4">
-    <div class="md:mx-48">
+<div class="max-w-5xl mx-auto my-24 text-center px-6">
+    <div class="">
         <div>
-            <h4 class="text-secondary font-bold uppercase text-2xl md:text-4xl pb-4">Our Vision</h4>
+            <h4 class="text-secondary font-bold uppercase text-2xl ">Our Vision</h4>
         </div>
         <div>
-            <p class="text-gray-600 mr-5 text-lg md:text-2xl pb-4">Our vision is a regenerative and
+            <p class="text-gray-600 md:text-lg pb-4 text-justify">Our vision is a regenerative and
                 circular economy in an equitable world, ensuring equal access to resources and living
                 in harmony with nature through collaboration and informed choices.</p>
         </div>
         <div class="py-6">
-            <h4 class="text-secondary font-bold uppercase text-2xl md:text-4xl ">Our Mission</h4>
+            <h4 class="text-secondary font-bold uppercase text-2xl">Our Mission</h4>
         </div>
         <div>
-            <p class="text-gray-600 mr-5 text-lg md:text-2xl pb-4">Our mission is to inspire and empower
+            <p class="text-gray-600 mr-5 md:text-lg text-justify">Our mission is to inspire and empower
                 individuals and communities to create a regenerative and circular economy,
                 promoting equal access to resources, fostering collaboration, and preserving biodiversity through
                 informed choices and
@@ -85,7 +85,7 @@
     </div>
 </div>
 <app-donors [images]="logoImages"></app-donors>
-<app-teams></app-teams>
+<app-teams [details]="details"></app-teams>
 <app-internship></app-internship>
 <app-subscribe></app-subscribe>
 <app-footer></app-footer>

@@ -23,6 +23,11 @@ import { DonorsComponent } from './Components/Shared/donors/donors.component';
 import { TeamsComponent } from './Components/Shared/teams/teams.component';
 import { InternshipComponent } from './Components/Shared/internship/internship.component';
 import { LogoCarouselComponent } from './Components/Shared/logo-carousel/logo-carousel.component';
+import { LogoSliderComponent } from './Components/Shared/logo-slider/logo-slider.component';
+import { HrLineComponent } from './Components/Shared/hr-line/hr-line.component';
+import { BlogComponent } from './Components/Shared/blog/blog.component';
+import { BlogPageComponent } from './Components/Pages/blog-page/blog-page.component';
+import { SingleBlogPageComponent } from './Components/Pages/single-blog-page/single-blog-page.component';
 
 
 @NgModule({
@@ -45,6 +50,11 @@ import { LogoCarouselComponent } from './Components/Shared/logo-carousel/logo-ca
     TeamsComponent,
     InternshipComponent,
     LogoCarouselComponent,
+    LogoSliderComponent,
+    HrLineComponent,
+    BlogComponent,
+    BlogPageComponent,
+    SingleBlogPageComponent,
 
 
   ],
