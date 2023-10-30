@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { articles } from 'src/app/Data/articles';
 
 @Component({
   selector: 'app-blog-page',
@@ -6,55 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-page.component.css']
 })
 export class BlogPageComponent {
-  blogDetails = [
+  articles = articles;
+  
+  blogHeader = [
     {
-      imageSrc: '../../../../assets/images/blog/blog-1.jpg',
-      imageAlt: 'article 1',
-      author: 'Hilda Malow',
-      title: 'Regenerative Agriculture Practices',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-2.jpg',
-      imageAlt: 'article 2',
-      author: 'Thiong’o Gachie',
-      title: 'Organic farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-3.jpg',
-      imageAlt: 'article 3',
-      author: 'Elizabeth Nthenya',
-      title: 'Mixed Farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-1.jpg',
-      imageAlt: 'article 1',
-      author: 'Hilda Malow',
-      title: 'Regenerative Agriculture Practices',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-2.jpg',
-      imageAlt: 'article 2',
-      author: 'Thiong’o Gachie',
-      title: 'Organic farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-3.jpg',
-      imageAlt: 'article 3',
-      author: 'Elizabeth Nthenya',
-      title: 'Mixed Farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-
+      title: 'Latest News & Articles '
+    }
   ]
 }

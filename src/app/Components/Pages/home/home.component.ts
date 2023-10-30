@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { articles } from 'src/app/Data/articles';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  articles = articles.slice(0, 3); //Display the first three articles
 
   images = [
     {
@@ -96,31 +99,39 @@ export class HomeComponent {
     // },
 
   ]
-  blogDetails = [
-    {
-      imageSrc: '../../../../assets/images/blog/blog-1.jpg',
-      imageAlt: 'article 1',
-      author: 'Hilda Malow',
-      title: 'Regenerative Agriculture Practices',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-2.jpg',
-      imageAlt: 'article 2',
-      author: 'Thiong’o Gachie',
-      title: 'Organic farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
-    {
-      imageSrc: '../../../../assets/images/blog/blog-3.jpg',
-      imageAlt: 'article 3',
-      author: 'Elizabeth Nthenya',
-      title: 'Mixed Farming',
-      content: '',
-      singleBlogUrl: '/blog',
-    },
+  // articles = [
+  //   {
+  //     id: 'fttf-1',
+  //     imageSrc: '../../../../assets/images/blog/blog-1.jpg',
+  //     imageAlt: 'article 1',
+  //     author: 'Hilda Malow',
+  //     title: 'Regenerative Agriculture Practices',
+  //     content: '',
+  //     singleBlogUrl: 'blog',
+  //   },
+  //   {
+  //     id: 'fttf-2',
+  //     imageSrc: '../../../../assets/images/blog/blog-2.jpg',
+  //     imageAlt: 'article 2',
+  //     author: 'Thiong’o Gachie',
+  //     title: 'Organic farming',
+  //     content: '',
+  //     singleBlogUrl: 'blog',
+  //   },
+  //   {
+  //     id: 'fttf-3',
+  //     imageSrc: '../../../../assets/images/blog/blog-3.jpg',
+  //     imageAlt: 'article 3',
+  //     author: 'Elizabeth Nthenya',
+  //     title: 'Mixed Farming',
+  //     content: '',
+  //     singleBlogUrl: 'blog',
+  //   },
 
+  // ]
+  blogHeader = [
+    {
+      title: 'Latest News & Articles Directly from Blog'
+    }
   ]
 }

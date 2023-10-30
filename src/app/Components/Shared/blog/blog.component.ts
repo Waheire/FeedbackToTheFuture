@@ -1,12 +1,16 @@
 import { Component, Input } from '@angular/core';
 
-interface singleBlog {
+interface singleArticle {
+  id: string;
   imageSrc: string;
   imageAlt: string;
   author: string;
   title: string;
   content: string;
-  singleBlogUrl: string;
+}
+
+interface blogHeder {
+  title: string;
 }
 
 @Component({
@@ -16,6 +20,12 @@ interface singleBlog {
 })
 export class BlogComponent {
 
-  @Input() blogDetails: singleBlog[] = [];
+  @Input() articles: singleArticle[] = [];
+  @Input() blogHeaders: blogHeder[] = [];
 
+  // Method to extract the first two sentences
+  getFirstTwoSentences(content: string): string {
+    const sentences = content.split(/(?<=[.!?])\s+/);
+    return sentences.slice(0, 1).join(' ');
+  }
 }

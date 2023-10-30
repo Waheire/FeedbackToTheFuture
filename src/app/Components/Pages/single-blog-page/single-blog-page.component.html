@@ -1,36 +1,18 @@
 <div class="w-full bg-secondaryBg ">
-    <div class="max-w-5xl mx-auto py-10">
+    <div class="max-w-5xl mx-auto py-10" *ngIf="article">
         <div class="pt-5 text-primary">
-            <strong>Author: Hilda Malow</strong>
+            <strong>Author: {{article.author}}</strong>
         </div>
         <div class="py-5">
-            <h1 class="font-bold text-4xl text-secondary">Regenerative Agriculture Practices</h1>
+            <h1 class="font-bold text-4xl text-secondary">{{article.title}}</h1>
         </div>
         <div class="py-5">
-            <img src=".../../../../../../assets/images/blog/blog-1.jpg" alt="" class="w-full">
+            <img src="{{article.imageSrc}}" alt="{{article.imageAlt}}" class="w-full">
         </div>
         <div class="py-5 text-lg text-justify">
-            <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum, molestiae
-                voluptatum
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.</p>
-            <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum, molestiae
-                voluptatum
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.</p>
-            <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum, molestiae
-                voluptatum
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.
-                quibusdam placeat doloremque distinctio dolore vel tempora minus sed ab corporis! Soluta ad rerum sit
-                ipsum a commodi.</p>
+            <p class="pb-5">{{article.content}}</p>
         </div>
     </div>
 </div>
-<app-blog></app-blog>
 <app-subscribe></app-subscribe>
 <app-footer></app-footer>

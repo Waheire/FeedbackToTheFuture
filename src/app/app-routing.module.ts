@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   //{ path: 'logo-slider', component: LogoSliderComponent },
   { path: 'blog', component: BlogPageComponent },
-  { path: 'singleBlog', component: SingleBlogPageComponent },
+  { path: 'blog/:id', component: SingleBlogPageComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
