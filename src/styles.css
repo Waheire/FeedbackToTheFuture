@@ -20,3 +20,58 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* owl carousel theme */
+/* .owl-dots .owl-dot {
+  bottom: 2% !important;
+  border-color: #68b336 !important;
+} */
+
+.owl-nav.disabled+.owl-dots {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-top: -100px !important;
+}
+
+.owl-dots .owl-dot span {
+    /* background: #68b336 !important; */
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #68b336 !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .owl-nav.disabled+.owl-dots {
+  margin-top: -8% !important;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .owl-nav.disabled+.owl-dots {
+  margin-top: -5% !important;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+      .owl-nav.disabled+.owl-dots {
+  margin-top: -8% !important;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        .owl-nav.disabled+.owl-dots {
+  margin-top: -6% !important;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+          .owl-nav.disabled+.owl-dots {
+  margin-top: -4% !important;
+}
+}

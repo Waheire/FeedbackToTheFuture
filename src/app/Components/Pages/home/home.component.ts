@@ -21,11 +21,7 @@ export class HomeComponent {
         '../../../../assets/images/Hero/slider-2.webp',
       imageAlt: 'Stiching Doen',
     },
-    {
-      imageSrc:
-        '../../../../assets/images/Hero/slider-3.webp',
-      imageAlt: 'Alliance Ciat',
-    },
+
     {
       imageSrc:
         '../../../../assets/images/Hero/slider-4.webp',

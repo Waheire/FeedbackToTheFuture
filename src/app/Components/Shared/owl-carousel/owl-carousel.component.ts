@@ -16,6 +16,17 @@ interface donorSlides {
 }
 
 
+interface heroImages {
+  imageSrc: string;
+  imageAlt: string;
+  h4Heading: string;
+  h1Heading1: string;
+  h1Heading2: string;
+   height:string;
+  pContentLeft: string;
+  pContentRight: string;
+}
+
 
 
 @Component({
@@ -33,9 +44,48 @@ export class OwlCarouselComponent {
 
   @Input() donors: boolean = false;
   @Input() blog: boolean = false;
+  @Input() hero: boolean = false;
 
   // @Input() blogSliderStore: slides[] = [];
   @Input() donorSlidesStore: donorSlides[] = [];
+  @Input() images: heroImages[] = [];
+
+  height = 0.1;
+
+  
+
+
+
+
+  heroCustomOptions: OwlOptions = {
+    loop: true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: false
+  }
+
   blogCustomOptions: OwlOptions = {
     loop: true,
     items: 3,
@@ -62,11 +112,13 @@ export class OwlCarouselComponent {
     nav: false
   }
 
-
   customOptionsDonors: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    items: 5,
+    items: 7,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     touchDrag: true,
     pullDrag: true,
     dots: false,
@@ -74,16 +126,16 @@ export class OwlCarouselComponent {
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1
-      },
-      400: {
         items: 2
       },
-      740: {
+      400: {
         items: 3
       },
-      940: {
+      740: {
         items: 4
+      },
+      940: {
+        items: 5
       }
     },
     nav: false

@@ -32,6 +32,7 @@ import { LoadingSpinnerComponent } from './Components/Shared/loading-spinner/loa
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { OwlCarouselComponent } from './Components/Shared/owl-carousel/owl-carousel.component';
 import { DetailsComponent } from './Components/Shared/blog/details/details.component';
+import { HeroCarouselComponent } from './Components/Shared/hero-carousel/hero-carousel.component';
 
 
 
@@ -63,6 +64,7 @@ import { DetailsComponent } from './Components/Shared/blog/details/details.compo
     LoadingSpinnerComponent,
     OwlCarouselComponent,
     DetailsComponent,
+    HeroCarouselComponent,
 
 
   ],
