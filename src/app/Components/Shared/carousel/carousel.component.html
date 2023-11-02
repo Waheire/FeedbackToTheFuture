@@ -3,7 +3,7 @@
         class="relative text-center slider-container bg-secondary flex flex-col justify-end flex-wrap ">
         <!-- image slider -->
         <img *ngFor="let image of images; let i=index" [src]="image.imageSrc" [alt]="image.imageAlt"
-            [ngClass]="{'image-active': selectedIndex === i}" class="fade sliderImage ">
+            [ngClass]="{'image-active': selectedIndex === i}" class="fade sliderImage h-auto max-w-full">
         <!-- slider text -->
         <div *ngFor="let text of texts; let i=index" class="container mx-auto sliderText fade"
             [ngClass]="{'sliderText-active': selectedIndex === i}">

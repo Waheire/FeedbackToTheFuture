@@ -33,6 +33,31 @@ export class HomeComponent {
     },
   ]
 
+
+  slides = [
+    {
+      id: '1',
+      src:
+        '../../../../assets/images/Hero/slider-1.webp',
+      alt: 'BioVision Africa Trus',
+      title: "Title 1"
+    },
+    {
+      id: '2',
+      src:
+        '../../../../assets/images/Hero/slider-2.webp',
+      alt: 'Stiching Doen',
+      title: "Title 2"
+    },
+    {
+      id: '3',
+      src:
+        '../../../../assets/images/Hero/slider-3.webp',
+      alt: 'Alliance Ciat',
+      title: 'Title 3'
+    },
+  ]
+
   logoImages = [
     {
       imageSrc:

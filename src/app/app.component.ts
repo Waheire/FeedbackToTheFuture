@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { initFlowbite } from 'flowbite';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,21 @@ import { initFlowbite } from 'flowbite';
 })
 export class AppComponent {
   title = 'FeedBackToTheFuture';
-  ngOnInit():void{
+  /**
+   *
+   */
+  constructor(
+    private spinner: NgxSpinnerService
+  ) {
+  }
+
+  ngOnInit() {
     initFlowbite();
+    //  spinner starts on init
+    this.spinner.show();
+
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 5000);
   }
 }

@@ -28,6 +28,11 @@ import { HrLineComponent } from './Components/Shared/hr-line/hr-line.component';
 import { BlogComponent } from './Components/Shared/blog/blog.component';
 import { BlogPageComponent } from './Components/Pages/blog-page/blog-page.component';
 import { SingleBlogPageComponent } from './Components/Pages/single-blog-page/single-blog-page.component';
+import { LoadingSpinnerComponent } from './Components/Shared/loading-spinner/loading-spinner.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { OwlCarouselComponent } from './Components/Shared/owl-carousel/owl-carousel.component';
+import { DetailsComponent } from './Components/Shared/blog/details/details.component';
+
 
 
 @NgModule({
@@ -55,12 +60,16 @@ import { SingleBlogPageComponent } from './Components/Pages/single-blog-page/sin
     BlogComponent,
     BlogPageComponent,
     SingleBlogPageComponent,
+    LoadingSpinnerComponent,
+    OwlCarouselComponent,
+    DetailsComponent,
 
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgxSpinnerModule,
     AppRoutingModule,
     FontAwesomeModule,
     CarouselModule,

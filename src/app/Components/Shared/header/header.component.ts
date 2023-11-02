@@ -21,7 +21,7 @@ export class HeaderComponent {
   openCloseMenu: boolean = false;
   mobileMenu() {
     this.openCloseMenu = !this.openCloseMenu;
-    console.log(this.openCloseMenu);
+    // console.log(this.openCloseMenu);
     if (this.openCloseMenu == true) {
       this.mobileMenuWidth = ""
     }

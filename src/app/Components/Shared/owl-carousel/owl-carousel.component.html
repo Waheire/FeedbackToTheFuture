@@ -1,0 +1,31 @@
+<!-- blog carousel -->
+<owl-carousel-o [options]="blogCustomOptions" *ngIf="blog">
+    <ng-container *ngFor="let article of articles">
+        <ng-template carouselSlide>
+            <app-blog></app-blog>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+
+
+<!-- Donor Logo Carousel -->
+<owl-carousel-o [options]="customOptionsDonors" *ngIf="donors">
+    <ng-container *ngFor="let slide of donorSlidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+            <div class="p-2 relative">
+                <img [src]="slide.src" [alt]="slide.alt">
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+
+<!-- fullscreen Hero  Carousel -->
+<!-- <owl-carousel-o [options]="customOptionsDonors" *ngIf="donors">
+    <ng-container *ngFor="let slide of donorSlidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+            <div class="p-2 relative">
+                <img [src]="slide.src" [alt]="slide.alt">
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o> -->

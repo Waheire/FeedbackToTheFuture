@@ -8,7 +8,7 @@ import { articles } from 'src/app/Data/articles';
 })
 export class BlogPageComponent {
   articles = articles;
-  
+
   blogHeader = [
     {
       title: 'Latest News & Articles '

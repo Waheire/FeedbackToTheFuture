@@ -29,8 +29,7 @@ export class CarouselComponent {
 
   selectedIndex = 0;
   ngOnInit() {
-
-  
+    this.delayCall();
 
 
   }
@@ -49,7 +48,6 @@ export class CarouselComponent {
     }
   }
 
-
   onNextClick() {
     if (this.selectedIndex === this.images.length - 1) {
       this.selectedIndex = 0;
@@ -58,5 +56,10 @@ export class CarouselComponent {
     }
   }
 
+  delayCall() {
+    setTimeout(() => {
+      this.onNextClick();
+    }, 5000)
+  }
 
 }

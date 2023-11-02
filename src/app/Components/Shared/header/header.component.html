@@ -84,31 +84,37 @@
                 <ul class="flex flex-col xl:gap-10 pl-0 lg:mt-1 lg:flex-row uppercase " data-te-navbar-nav-ref>
                     <!-- Home link -->
                     <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1" data-te-nav-item-ref>
-                        <a class=" disabled:text-primary lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400 "
+                        <a (click)="mobileMenu()"
+                            class=" disabled:text-primary lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400 "
                             aria-current="Home page" routerLink="" routerLinkActive="active"
                             [routerLinkActiveOptions]={exact:true}>Home</a>
                     </li>
                     <!-- Link -->
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a (click)="mobileMenu()"
+                            class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="about-us" routerLinkActive="active" data-te-nav-link-ref>About Us</a>
                     </li>
                     <!-- Link -->
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a (click)="mobileMenu()"
+                            class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="what-we-do" routerLinkActive="active" data-te-nav-link-ref>What We Do</a>
                     </li>
 
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a (click)="mobileMenu()"
+                            class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="sustainability" routerLinkActive="active" data-te-nav-link-ref>Media</a>
                     </li>
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a (click)="mobileMenu()"
+                            class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="blog" routerLinkActive="active" data-te-nav-link-ref>Blog</a>
                     </li>
                     <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-                        <a class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
+                        <a (click)="mobileMenu()"
+                            class="p-0  text-secondary transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary disabled:text-primary motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-primary dark:[&.active]:text-neutral-400"
                             routerLink="contact" routerLinkActive="active" data-te-nav-link-ref>Contact</a>
                     </li>
                 </ul>
