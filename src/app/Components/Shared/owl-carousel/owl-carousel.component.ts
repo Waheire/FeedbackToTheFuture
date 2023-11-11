@@ -22,9 +22,19 @@ interface heroImages {
   h4Heading: string;
   h1Heading1: string;
   h1Heading2: string;
-   height:string;
+  height: string;
   pContentLeft: string;
   pContentRight: string;
+}
+
+// team
+interface teamMemberDetails {
+  imageSrc: string;
+  imageAlt: string;
+  fullName: string;
+  title: string;
+  socialX: string;
+  socialLinkedin: string;
 }
 
 
@@ -45,17 +55,14 @@ export class OwlCarouselComponent {
   @Input() donors: boolean = false;
   @Input() blog: boolean = false;
   @Input() hero: boolean = false;
+  @Input() team: boolean = false;
 
   // @Input() blogSliderStore: slides[] = [];
   @Input() donorSlidesStore: donorSlides[] = [];
   @Input() images: heroImages[] = [];
+  @Input() teamDetails: teamMemberDetails[] =[];
 
   height = 0.1;
-
-  
-
-
-
 
   heroCustomOptions: OwlOptions = {
     loop: true,
@@ -139,6 +146,35 @@ export class OwlCarouselComponent {
       }
     },
     nav: false
+  }
+
+  customOptionsTeam: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+   
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: true
   }
 
   // Method to extract the first two sentences

@@ -30,5 +30,9 @@ export class HeaderComponent {
     }
   }
 
-  
+  hideMenu() {
+    this.mobileMenuWidth = "hidden";
+  }
+
+
 }

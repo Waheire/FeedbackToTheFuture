@@ -33,6 +33,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { OwlCarouselComponent } from './Components/Shared/owl-carousel/owl-carousel.component';
 import { DetailsComponent } from './Components/Shared/blog/details/details.component';
 import { HeroCarouselComponent } from './Components/Shared/hero-carousel/hero-carousel.component';
+import { JobsComponent } from './Components/Pages/jobs/jobs.component';
 
 
 
@@ -65,6 +66,7 @@ import { HeroCarouselComponent } from './Components/Shared/hero-carousel/hero-ca
     OwlCarouselComponent,
     DetailsComponent,
     HeroCarouselComponent,
+    JobsComponent,
 
 
   ],

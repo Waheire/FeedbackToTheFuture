@@ -11,16 +11,15 @@ import { LogoSliderComponent } from './Components/Shared/logo-slider/logo-slider
 import { BlogComponent } from './Components/Shared/blog/blog.component';
 import { BlogPageComponent } from './Components/Pages/blog-page/blog-page.component';
 import { SingleBlogPageComponent } from './Components/Pages/single-blog-page/single-blog-page.component';
+import { JobsComponent } from './Components/Pages/jobs/jobs.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'what-we-do', component: WhatWeDoComponent },
-  // { path: 'services', component: OurServicesComponent },
-  { path: 'sustainability', component: SustainabilityComponent },
+  { path: 'annual-reports', component: SustainabilityComponent },
   { path: 'contact', component: ContactComponent },
-  //{ path: 'logo-slider', component: LogoSliderComponent },
+  { path: 'about-us/jobs', component: JobsComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'blog/:id', component: SingleBlogPageComponent },
   { path: '**', component: NotFoundComponent },
