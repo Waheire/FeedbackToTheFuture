@@ -13,7 +13,7 @@
     <ng-container *ngFor="let slide of donorSlidesStore">
         <ng-template carouselSlide [id]="slide.id">
             <div class="p-2 relative">
-                <img [src]="slide.src" [alt]="slide.alt">
+                <img [src]="slide.src" [alt]="slide.alt" loading="lazy">
             </div>
         </ng-template>
     </ng-container>
@@ -25,7 +25,8 @@
         <ng-template carouselSlide>
             <div class="">
                 <!-- image slider -->
-                <img [src]="image.imageSrc" [alt]="image.imageAlt" class="fade relative h-[50vh] md:h-[80vh]">
+                <img [src]="image.imageSrc" [alt]="image.imageAlt" class="fade relative h-[50vh] md:h-[80vh]"
+                    loading="lazy">
                 <!-- slider text -->
                 <div class=" left-0 right-0 fade absolute bottom-[8%] ">
                     <div class=" p-2 md:p-4">
@@ -62,7 +63,7 @@
             <div class="flex flex-row justify-around gap-8">
                 <div class="mb-12">
                     <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 p-2" [src]="detail.imageSrc"
-                        [alt]="detail.imageSrc" />
+                        [alt]="detail.imageSrc" loading="lazy" />
                     <h5 class="mb-4 text-lg md:text-2xl font-bold">{{detail.fullName}}</h5>
                     <p class="mb-6 text-lg">{{detail.title}}</p>
                     <ul class="mx-auto flex list-inside justify-center mb-10">
